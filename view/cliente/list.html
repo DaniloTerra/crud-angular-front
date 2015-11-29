@@ -1,0 +1,30 @@
+<h3 class="text-center" ng-init="loadAll()">Listagem de Clientes</h3>
+
+<table class="table table-bordered table-hover table-condensed">
+  <thead>
+    <tr>
+      <th class="text-center" style="width: 70px;">#</th>
+      <th class="text-center">Nome</th>
+      <th class="text-center">Email</th>
+      <th class="text-center">Telefone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="cliente in clientes">
+      <td>
+        <a href="#/cliente/visualizar/{{ cliente.id }}">
+          <span class="fa fa-archive"></span>
+        </a>
+        <a href="#/cliente/alterar/{{ cliente.id }}">
+          <span class="fa fa-recycle"></span>
+        </a>
+        <a href="#/cliente/excluir/{{ cliente.id }}">
+          <span class="fa fa-trash"></span>
+        </a>
+      </td>
+      <td>{{ cliente.nome }}</td>
+      <td>{{ cliente.email }}</td>
+      <td>{{ cliente.telefone }}</td>
+    </tr>
+  </tbody>
+</table>

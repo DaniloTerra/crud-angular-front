@@ -1,0 +1,27 @@
+{
+  "name": "crud-angular-front",
+  "version": "0.0.0",
+  "description": "Exemplo de CRUD usando AngularJS e PHP Laravel",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "AngularJS",
+    "Laravel",
+    "CRUD"
+  ],
+  "author": "Danilo Miranda Terra",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-route": "^1.4.8",
+    "bootstrap": "^3.3.6",
+    "bootswatch": "^3.3.6",
+    "font-awesome": "^4.4.0",
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
